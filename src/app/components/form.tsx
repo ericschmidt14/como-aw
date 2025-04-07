@@ -23,7 +23,7 @@ export default function EventForm() {
 
   return !success ? (
     <Paper bg="rgb(0, 0, 0)" className="relative">
-      <div className="absolute -top-38 -right-32">
+      <div className="absolute -top-40 -right-32">
         <Image src="/bg3.svg" width="320" height="320" alt="Bg" />
       </div>
       <form
@@ -54,7 +54,7 @@ export default function EventForm() {
       >
         <div className="flex flex-col gap-4">
           <h4>Ihre Anmeldung</h4>
-          <div className="grid grid-cols-2 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <TextInput
               name="firstName"
               label="Vorname"

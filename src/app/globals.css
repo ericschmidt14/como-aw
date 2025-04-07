@@ -91,4 +91,16 @@ a:not(.logo):not(.mantine-Button-root):hover,
 
 .dimmed {
   color: var(--dimmed);
+  font-size: 0.8rem;
+}
+
+@media (max-width: 640px) {
+  h1 {
+    font-size: 2.4rem;
+    line-height: 3.2rem;
+  }
+
+  h3 {
+    font-size: 1.6rem;
+  }
 }

@@ -22,7 +22,7 @@ export default function Page() {
   ];
 
   return (
-    <div className="max-w-[1440px] mx-auto flex flex-col gap-16 p-8">
+    <div className="max-w-[1440px] mx-auto flex flex-col gap-16 p-2 sm:p-8">
       <header className="flex flex-col items-center text-center gap-2 pb-4">
         <Logo />
         <p className="dimmed">
