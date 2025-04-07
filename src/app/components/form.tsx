@@ -1,5 +1,6 @@
 "use client";
 import { Button, Checkbox, Paper, TextInput } from "@mantine/core";
+import Image from "next/legacy/image";
 import Link from "next/link";
 import { ChangeEvent, useState } from "react";
 import { validateEmail } from "../lib/utils";
@@ -21,7 +22,10 @@ export default function EventForm() {
     setData({ ...data, [e.target.name]: e.target.value });
 
   return !success ? (
-    <Paper bg="rgb(0, 0, 0)">
+    <Paper bg="rgb(0, 0, 0)" className="relative">
+      <div className="absolute -top-38 -right-32">
+        <Image src="/bg3.svg" width="320" height="320" alt="Bg" />
+      </div>
       <form
         onSubmit={(e) => {
           e.preventDefault();
