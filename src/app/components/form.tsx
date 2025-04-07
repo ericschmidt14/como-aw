@@ -101,6 +101,7 @@ export default function EventForm() {
         />
 
         <Button
+          type="submit"
           disabled={
             data.firstName.length === 0 ||
             data.lastName.length === 0 ||
