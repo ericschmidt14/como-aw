@@ -29,7 +29,7 @@ export default function Page() {
           Unser Digitalisierungspartner CoMo Solution lädt ein:
         </p>
         <h1>Richtig verteidigt – mit Cybersecurity der Spitzenklasse!</h1>
-        <h4>Ihr exklusives IT-Security-Event mit Arctic Wolf</h4>
+        <h4>Ihr exklusives IT-Security-Event mit ArcticWolf</h4>
       </header>
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
         <div className="flex flex-col gap-4 px-8">
@@ -46,7 +46,7 @@ export default function Page() {
           <p>
             Kommen Sie am 22. Mai 2025 ins FICHTE45 Co-Working und erleben ein
             exklusives Event mit CoMo Solution, Digitalisierungspartner des 1.
-            FC Nürnberg, und Arctic Wolf, dem Experten für Managed Security &
+            FC Nürnberg, und ArcticWolf, dem Experten für Managed Security &
             Incident Response.
           </p>
         </div>
@@ -73,7 +73,7 @@ export default function Page() {
           <h3>Das erwartet Sie:</h3>
           <ul>
             <li>
-              Cybersecurity-Insights: Die Security-Strategien von Arctic Wolf
+              Cybersecurity-Insights: Die Security-Strategien von ArcticWolf
             </li>
             <li>Best Practices für den Schutz Ihrer IT-Infrastruktur</li>
             <li>
@@ -85,7 +85,7 @@ export default function Page() {
           <p>Sichern Sie sich Ihren Platz – die Teilnehmerzahl ist begrenzt!</p>
           <p>Wir freuen uns auf Sie!</p>
           <p>
-            <b>Ihr Team von CoMo Solution & Arctic Wolf</b>
+            <b>Ihr Team von CoMo Solution & ArcticWolf</b>
           </p>
         </div>
         <EventForm />

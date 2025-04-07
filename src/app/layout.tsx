@@ -6,7 +6,7 @@ import Footer from "./components/footer";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "CoMo x Arctic Wolf",
+  title: "CoMo x ArcticWolf",
   description: "Ihr exklusives IT-Security-Event",
 };
 
@@ -41,7 +41,7 @@ export default function RootLayout({
       <body>
         <MantineProvider theme={theme} defaultColorScheme="dark">
           <Suspense>
-            <main className="relative z-10 min-h-screen flex flex-col justify-between bg-[length:300%_300%] bg-gradient-to-r from-[#b3193e] via-[#aa1124] via-30% to-[#220407] bg-right">
+            <main className="relative z-10 min-h-screen flex flex-col justify-between">
               {children}
               <Footer />
             </main>

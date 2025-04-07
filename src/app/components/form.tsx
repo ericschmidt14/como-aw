@@ -21,7 +21,7 @@ export default function EventForm() {
     setData({ ...data, [e.target.name]: e.target.value });
 
   return !success ? (
-    <Paper>
+    <Paper bg="rgb(0, 0, 0)">
       <form
         onSubmit={(e) => {
           e.preventDefault();
@@ -110,7 +110,7 @@ export default function EventForm() {
       </form>
     </Paper>
   ) : (
-    <Paper>
+    <Paper bg="rgb(0, 0, 0)">
       <div className="h-full flex flex-col gap-2 items-center justify-center">
         <h4>Vielen Dank!</h4>
         <p className="dimmed">Wir haben ihre Anmeldung erhalten.</p>
