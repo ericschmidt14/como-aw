@@ -31,8 +31,8 @@ export default function Page() {
         <h1>Richtig verteidigt – mit Cybersecurity der Spitzenklasse!</h1>
         <h4>Ihr exklusives IT-Security-Event mit ArcticWolf</h4>
       </header>
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
-        <div className="flex flex-col gap-4 px-8">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-4 lg:gap-y-16">
+        <div className="flex flex-col gap-4 px-4 lg:px-8">
           <p>
             Eine robuste Verteidigung kann in vielen Bereichen entscheidend
             sein, nicht nur im Fußball. Auch für Organisationen und Unternehmen
@@ -50,7 +50,7 @@ export default function Page() {
             Incident Response.
           </p>
         </div>
-        <div className="flex flex-col gap-4 px-8">
+        <div className="flex flex-col gap-4 px-4 lg:px-8">
           <p>
             Erhalten Sie Informationen aus erster Hand, wie Sie Ihr Unternehmen
             mit effizienten, KI-gestützten Lösungen schützen können und dabei
@@ -69,7 +69,7 @@ export default function Page() {
             })}
           </div>
         </div>
-        <div className="flex flex-col gap-4 p-8 lg:h-min lg:sticky lg:top-4">
+        <div className="flex flex-col gap-4 px-4 lg:px-8 py-16 lg:py-8 lg:h-min lg:sticky lg:top-4">
           <h3>Das erwartet Sie:</h3>
           <ul>
             <li>
