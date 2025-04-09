@@ -29,7 +29,7 @@ export default function EventForm() {
       <form
         onSubmit={(e) => {
           e.preventDefault();
-          fetch(`${HOOK_API}&src=kontaktformular`, {
+          fetch(`${HOOK_API}&src=kontaktformular&type=EVENT_INVITE`, {
             method: "POST",
             headers: {
               "Content-Type": "application/json",
@@ -39,7 +39,6 @@ export default function EventForm() {
                 name: `${data.firstName} ${data.lastName}`,
                 company: data.company,
                 email: data.email,
-                type: "event",
               },
               null,
               2
