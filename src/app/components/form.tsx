@@ -39,6 +39,7 @@ export default function EventForm() {
                 name: `${data.firstName} ${data.lastName}`,
                 company: data.company,
                 email: data.email,
+                type: "event",
               },
               null,
               2
@@ -72,7 +73,6 @@ export default function EventForm() {
             name="company"
             label="Unternehmen"
             onChange={handleChange}
-            withAsterisk
           />
           <TextInput
             name="email"
