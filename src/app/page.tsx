@@ -106,6 +106,15 @@ export default function Page() {
               Besuch!
             </i>
           </p>
+          <Image
+            src="/aw.png"
+            width="240"
+            height="96"
+            alt="CoMo x ArcticWolf"
+            style={{
+              opacity: "0.2",
+            }}
+          />
         </div>
         <EventForm />
       </div>
