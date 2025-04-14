@@ -41,6 +41,7 @@ export default function EventForm() {
                 email: data.email,
                 created: new Date(),
                 type: "EVENT_INVITE",
+                url: window.location.href,
               },
               null,
               2
