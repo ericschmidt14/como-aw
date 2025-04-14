@@ -118,7 +118,10 @@ export default function EventForm() {
     <Paper bg="rgb(0, 0, 0)">
       <div className="h-full flex flex-col gap-2 items-center justify-center p-4">
         <h4>Vielen Dank!</h4>
-        <p className="dimmed">Wir haben Ihre Anmeldung erhalten.</p>
+        <p className="dimmed">
+          Wir haben Ihre Anmeldung erhalten und melden uns in Kürze mit weiteren
+          Details.
+        </p>
       </div>
     </Paper>
   );

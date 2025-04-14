@@ -1,10 +1,16 @@
 "use client";
 import { IconCalendarEvent, IconClock, IconMapPin } from "@tabler/icons-react";
+import Image from "next/image";
 import EventForm from "./components/form";
 import Logo from "./components/logo";
 
 export default function Page() {
   const details = [
+    {
+      icon: <IconMapPin size={20} />,
+      label: "FICHTE45",
+      addition: "Fichtestraße 45, 90489 Nürnberg",
+    },
     {
       icon: <IconCalendarEvent size={20} />,
       label: "22. Mai 2025",
@@ -13,11 +19,6 @@ export default function Page() {
       icon: <IconClock size={20} />,
       label: "9:30 – 13:00 Uhr",
       addition: "danach Get-Together",
-    },
-    {
-      icon: <IconMapPin size={20} />,
-      label: "FICHTE45",
-      addition: "Fichtestraße 45, 90489 Nürnberg",
     },
   ];
 
@@ -31,7 +32,7 @@ export default function Page() {
         <h1>Richtig verteidigt – mit Cybersecurity der Spitzenklasse!</h1>
         <h4>Ihr exklusives IT-Security-Event mit ArcticWolf</h4>
       </header>
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-4 lg:gap-y-16">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-4 gap-y-16">
         <div className="flex flex-col gap-4 px-4 lg:px-8">
           <p>
             Eine robuste Verteidigung kann in vielen Bereichen entscheidend
@@ -44,19 +45,34 @@ export default function Page() {
             überlastet werden?
           </p>
           <p>
-            Kommen Sie am 22. Mai 2025 ins FICHTE45 Co-Working und erleben ein
-            exklusives Event mit CoMo Solution, Digitalisierungspartner des 1.
-            FC Nürnberg, und ArcticWolf, dem Experten für Managed Security &
-            Incident Response.
+            Kommen Sie am <b>22. Mai 2025</b> ins <b>FICHTE45 Co-Working</b> und
+            erleben ein exklusives Event mit CoMo Solution,
+            Digitalisierungspartner des 1. FC Nürnberg, und ArcticWolf, dem
+            Experten für Managed Security & Incident Response.
           </p>
-        </div>
-        <div className="flex flex-col gap-4 px-4 lg:px-8">
           <p>
             Erhalten Sie Informationen aus erster Hand, wie Sie Ihr Unternehmen
             mit effizienten, KI-gestützten Lösungen schützen können und dabei
             auch Ihre eigene IT entlasten können.
           </p>
-          <div className="flex flex-col gap-4 py-8">
+        </div>
+        <div className="flex flex-col gap-8">
+          <div
+            className="relative w-full overflow-hidden"
+            style={{ aspectRatio: "16 / 7" }}
+          >
+            <Image
+              src="/fichte.png"
+              alt="FICHTE45"
+              fill
+              style={{
+                objectFit: "cover",
+                objectPosition: "center bottom",
+                filter: "brightness(0.9)",
+              }}
+            />
+          </div>
+          <div className="flex flex-col gap-4 px-4 lg:px-8">
             {details.map((d, i) => {
               return (
                 <div key={i} className="flex items-center gap-4">
@@ -69,23 +85,26 @@ export default function Page() {
             })}
           </div>
         </div>
+
         <div className="flex flex-col gap-4 px-4 lg:px-8 py-16 lg:py-8 lg:h-min lg:sticky lg:top-4">
           <h3>Das erwartet Sie:</h3>
           <ul>
             <li>
               Cybersecurity-Insights: Die Security-Strategien von ArcticWolf
             </li>
-            <li>Best Practices für den Schutz Ihrer IT-Infrastruktur</li>
+            <li>Behind the scenes: Der Concierge-Service im SOC Frankfurt</li>
             <li>
-              Impulsvortrag des 1. FC Nürnberg: „Es kommt auf die richtige
-              Verteidigung an“
+              Das Werkzeug für den Schutz Ihrer IT-Infrastruktur mit ArcticWolf
             </li>
-            <li>Networking & Austausch mit Experten und Entscheidern</li>
+            <li>Impulsvortrag: „Es kommt auf die richtige Verteidigung an“</li>
+            <li>Networking & Austausch mit Gästen & Experten</li>
           </ul>
           <p>Sichern Sie sich Ihren Platz – die Teilnehmerzahl ist begrenzt!</p>
-          <p>Wir freuen uns auf Sie!</p>
           <p>
-            <b>Ihr Team von CoMo Solution & ArcticWolf</b>
+            <i>
+              Das Team von CoMo Solution & ArcticWolf freut sich auf Ihren
+              Besuch!
+            </i>
           </p>
         </div>
         <EventForm />
