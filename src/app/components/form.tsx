@@ -39,6 +39,8 @@ export default function EventForm() {
                 name: `${data.firstName} ${data.lastName}`,
                 company: data.company,
                 email: data.email,
+                created: new Date(),
+                type: "EVENT_INVITE",
               },
               null,
               2
@@ -104,7 +106,6 @@ export default function EventForm() {
           disabled={
             data.firstName.length === 0 ||
             data.lastName.length === 0 ||
-            // data.company.length === 0 ||
             !validateEmail(data.email) ||
             !privacy
           }
