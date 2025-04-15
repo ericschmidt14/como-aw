@@ -17,7 +17,7 @@ export default function Page() {
     },
     {
       icon: <IconClock size={20} />,
-      label: "9:30 – 13:00 Uhr",
+      label: "9:30 – 13:30 Uhr",
       addition: "danach Get-Together",
     },
   ];
@@ -92,7 +92,7 @@ export default function Page() {
             <li>
               Cybersecurity-Insights: Die Security-Strategien von ArcticWolf
             </li>
-            <li>Behind the scenes: Der Concierge-Service im SOC Frankfurt</li>
+            {/* <li>Behind the scenes: Der Concierge-Service im SOC Frankfurt</li> */}
             <li>
               Das Werkzeug für den Schutz Ihrer IT-Infrastruktur mit ArcticWolf
             </li>
