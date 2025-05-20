@@ -13,7 +13,7 @@ export default function Page() {
     },
     {
       icon: <IconCalendarEvent size={20} />,
-      label: "22. Mai 2025",
+      label: "7. Juli 2025",
     },
     {
       icon: <IconClock size={20} />,
@@ -45,7 +45,7 @@ export default function Page() {
             überlastet werden?
           </p>
           <p>
-            Kommen Sie am <b>22. Mai 2025</b> ins <b>FICHTE45 Co-Working</b> und
+            Kommen Sie am <b>7. Juli 2025</b> ins <b>FICHTE45 Co-Working</b> und
             erleben ein exklusives Event mit CoMo Solution,
             Digitalisierungspartner des 1. FC Nürnberg, und ArcticWolf, dem
             Experten für Managed Security & Incident Response.
