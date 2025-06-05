@@ -29,7 +29,7 @@ export default function Page() {
         <p className="dimmed">
           Unser Digitalisierungspartner CoMo Solution lädt ein:
         </p>
-        <h1>Richtig verteidigt – mit Cybersecurity der Spitzenklasse!</h1>
+        <h1>Sicher und sorgenfrei – mit Cybersecurity der Spitzenklasse!</h1>
         <h4>Ihr exklusives IT-Security-Event mit ArcticWolf</h4>
       </header>
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-4 gap-y-16">
@@ -89,15 +89,23 @@ export default function Page() {
         <div className="flex flex-col gap-4 px-4 lg:px-8 py-16 lg:py-8 lg:h-min lg:sticky lg:top-4">
           <h3>Das erwartet Sie:</h3>
           <ul>
-            <li>
+            <li className="accordion">
               Cybersecurity-Insights: Die Security-Strategien von ArcticWolf
             </li>
-            {/* <li>Behind the scenes: Der Concierge-Service im SOC Frankfurt</li> */}
-            <li>
-              Das Werkzeug für den Schutz Ihrer IT-Infrastruktur mit ArcticWolf
+            <li className="accordion">
+              KI-gestützte Security-Lösungen für Ihr Unternehmen
             </li>
-            <li>Impulsvortrag: „Es kommt auf die richtige Verteidigung an“</li>
-            <li>Networking & Austausch mit Gästen & Experten</li>
+            <li className="accordion">
+              Managed Security, die sich auch in bestehende
+              IT-Sicherheitsstrukturen integriert
+            </li>
+            <li className="accordion">24/7-Monitoring & Incident Response</li>
+            <li className="accordion">
+              Entlastung Ihrer IT durch ein externes Expertenteam
+            </li>
+            <li className="accordion">
+              Networking & Austausch mit Gästen und Experten
+            </li>
           </ul>
           <p>Sichern Sie sich Ihren Platz – die Teilnehmerzahl ist begrenzt!</p>
           <p>
